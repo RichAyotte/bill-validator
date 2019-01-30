@@ -8,8 +8,8 @@
 
 'use strict'
 
-const createApex7000 = require('../../src/create-apex-7000')
-const createSerialInterface = require('../../src/create-serial-interface')
+const createApex7000 = require('./lib/create-apex-7000')
+const createSerialInterface = require('./lib/create-serial-interface')
 
 module.exports = {
 	createApex7000

@@ -1,6 +1,6 @@
 {
   "name": "bill-validator",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "description": "Bill validator/acceptor",
   "main": "index.js",
   "repository": "git@github.com:RichAyotte/bill-validator.git",

@@ -8,7 +8,7 @@
 
 'use strict'
 
-const IOInterface = require('../../src/types/io-interface')
+const IOInterface = require('../../lib/types/io-interface')
 
 describe(`IO interface`, () => {
 	const ioInterface = IOInterface({

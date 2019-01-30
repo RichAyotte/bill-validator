@@ -12,7 +12,7 @@ module.exports = {
 	coverageDirectory: 'test/coverage'
 	, collectCoverageFrom: [
 		'index.js'
-		, 'src/**/*.js'
+		, 'lib/**/*.js'
 	]
 	, verbose: true
 }
