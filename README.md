@@ -3,7 +3,6 @@
 A Node.js library to facilitate the use of bill validators.
 
 ## Supported Validators
-PR are welcome
 
 - [Apex 7000](https://pyramidacceptors.com/products/apex-7000-series)
 
@@ -61,18 +60,44 @@ const main = async () => {
 main()
 ```
 
+## API
+The bill validator will emit state changes and events.
+
+### State changes
+|Property        | Type    |
+|----------------|---------|
+|accepting       | Boolean |
+|billJammed      | Boolean |
+|escrowed        | Boolean |
+|failure         | Boolean |
+|idling          | Boolean |
+|returning       | Boolean |
+|stackerFull     | Boolean |
+|stackerPresent  | Boolean |
+|stacking        | Boolean |
+
+### Events
+|Event           | Type    |
+|----------------|---------|
+|billRejected    | Boolean |
+|cheated         | Boolean |
+|powerUp         | Boolean |
+|ready           | Boolean |
+|returned        | Boolean |
+|stacked         | Boolean |
+|billStackedValue| Number  |
+
 ## Contributing
 
 ### Style
-My style is a bit unorthodox and has evolved over 20 years of development. It's not what the cool kids are doing but hey, you might like it!
+My style is a bit unorthodox and it's not what the cool kids are doing but you might like it. Here's the eslint if you're curious.
 
 [eslint-config-ayotte](https://www.npmjs.com/package/eslint-config-ayotte)
 
 ### Process
-1. Write test
+1. Write tests
 2. Write code
-3. Assure that there are not test or lint errors
-4. Submit PR
+3. Submit PR
 
 ## License
 
