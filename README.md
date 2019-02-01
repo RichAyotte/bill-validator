@@ -61,36 +61,48 @@ main()
 ```
 
 ## API
+### Bill Validator
+#### Methods
+There are four methods, start, stop, accept and idle.
+
+| Method          | Purpose                                            |
+|:--------------- |:-------------------------------------------------- |
+| start           | Open communication and initiate hardware. |
+| stop            | Close communication.                     |
+| accept          | Start accepting bills. Escrow and stacking is automatic |
+| idle            | Don't accept bills but still listen for events.    |
+
+#### Events
 The bill validator will emit state changes and events.
 
-### State changes
-|Property        | Type    |
-|----------------|---------|
-|accepting       | Boolean |
-|billJammed      | Boolean |
-|escrowed        | Boolean |
-|failure         | Boolean |
-|idling          | Boolean |
-|returning       | Boolean |
-|stackerFull     | Boolean |
-|stackerPresent  | Boolean |
-|stacking        | Boolean |
+##### State changes
+| Property        | Type    |
+|:--------------- |:------- |
+| accepting       | Boolean |
+| billJammed      | Boolean |
+| escrowed        | Boolean |
+| failure         | Boolean |
+| idling          | Boolean |
+| returning       | Boolean |
+| stackerFull     | Boolean |
+| stackerPresent  | Boolean |
+| stacking        | Boolean |
 
-### Events
-|Event           | Type    |
-|----------------|---------|
-|billRejected    | Boolean |
-|cheated         | Boolean |
-|powerUp         | Boolean |
-|ready           | Boolean |
-|returned        | Boolean |
-|stacked         | Boolean |
-|billStackedValue| Number  |
+##### Events
+| Event            | Type     |
+|:---------------- |:-------- |
+| billRejected     | Boolean  |
+| cheated          | Boolean  |
+| powerUp          | Boolean  |
+| ready            | Boolean  |
+| returned         | Boolean  |
+| stacked          | Boolean  |
+| billStackedValue | Number   |
 
 ## Contributing
 
-### Style
-My style is a bit unorthodox and it's not what the cool kids are doing but you might like it. Here's the eslint if you're curious.
+### Coding Style
+My coding style is a bit unorthodox and it's not what the cool kids are doing but you might like it. I use leading commas and tabs, oh the horror! Here's the eslint with all the details.
 
 [eslint-config-ayotte](https://www.npmjs.com/package/eslint-config-ayotte)
 
@@ -100,5 +112,6 @@ My style is a bit unorthodox and it's not what the cool kids are doing but you m
 3. Submit PR
 
 ## License
+[MIT License](./LICENSE)
 
-[MIT](./LICENSE)
+Copyright (c) 2019 Richard Ayotte
