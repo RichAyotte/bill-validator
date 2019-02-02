@@ -1,10 +1,11 @@
 # bill-validator
+[![npm version](https://badge.fury.io/js/bill-validator.svg)](https://badge.fury.io/js/bill-validator)
 
 A Node.js library to facilitate the use of bill validators.
 
 ## Supported Validators
 
-- [Apex 7000](https://pyramidacceptors.com/products/apex-7000-series)
+- Apex 7000](<https://pyramidacceptors.com/products/apex-7000-series>)
 
 ## Getting started
 
@@ -44,7 +45,6 @@ const main = async () => {
 		ioInterface: serialInterface
 	})
 
-
 	// Listen for events
 	apex7000.onAny((event, value) => {
 		console.log({[event]: value})
@@ -65,17 +65,17 @@ main()
 #### Methods
 There are four methods, start, stop, accept and idle.
 
-| Method          | Purpose                                            |
-|:--------------- |:-------------------------------------------------- |
-| start           | Open communication and initiate hardware. |
-| stop            | Close communication.                     |
+| Method          | Purpose                                                 |
+|:--------------- |:------------------------------------------------------- |
+| start           | Open communication and initiate hardware.               |
+| stop            | Close communication.                                    |
 | accept          | Start accepting bills. Escrow and stacking is automatic |
-| idle            | Don't accept bills but still listen for events.    |
+| idle            | Don't accept bills but still listen for events.         |
 
-#### Events
+#### State and Events
 The bill validator will emit state changes and events.
 
-##### State changes
+##### State
 | Property        | Type    |
 |:--------------- |:------- |
 | accepting       | Boolean |
@@ -102,14 +102,16 @@ The bill validator will emit state changes and events.
 ## Contributing
 
 ### Coding Style
-My coding style is a bit unorthodox and it's not what the cool kids are doing but you might like it. I use leading commas and tabs, oh the horror! Here's the eslint with all the details.
+My coding style is a bit unorthodox and it's not what the cool kids are doing
+but you might like it. I use leading commas and tabs, oh the horror! Here's the
+eslint with all the details.
 
 [eslint-config-ayotte](https://www.npmjs.com/package/eslint-config-ayotte)
 
 ### Process
 1. Write tests
-2. Write code
-3. Submit PR
+1. Write code
+1. Submit PR
 
 ## License
 [MIT License](./LICENSE)
