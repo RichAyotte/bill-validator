@@ -114,4 +114,4 @@ My coding style is a bit unorthodox and it's not what the cool kids are doing bu
 ## License
 [MIT License](./LICENSE)
 
-Copyright (c) 2019 Richard Ayotte
+Copyright © 2019 Richard Ayotte
