@@ -5,7 +5,7 @@ A Node.js library to facilitate the use of bill validators.
 
 ## Supported Validators
 
-- Apex 7000](<https://pyramidacceptors.com/products/apex-7000-series>)
+- [Apex 7000](<https://pyramidacceptors.com/products/apex-7000-series>)
 
 ## Getting started
 
