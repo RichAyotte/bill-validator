@@ -92,12 +92,12 @@ The bill validator will emit state changes and events.
 | Event            | Type     |
 |:---------------- |:-------- |
 | billRejected     | Boolean  |
+| billStackedValue | Number   |
 | cheated          | Boolean  |
 | powerUp          | Boolean  |
 | ready            | Boolean  |
 | returned         | Boolean  |
 | stacked          | Boolean  |
-| billStackedValue | Number   |
 
 ## Contributing
 
