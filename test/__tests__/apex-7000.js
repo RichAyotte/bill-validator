@@ -10,7 +10,7 @@
 
 const BillValidator = require('../../lib/types/bill-validator')
 const createApex7000 = require('../../lib/create-apex-7000')
-const serialInterface = require('../../lib/samples/serial-io-interface')
+const serialInterface = require('../../samples/serial-io-interface')
 
 describe('Apex 7000 bill validator', () => {
 	const apex7000 = createApex7000({

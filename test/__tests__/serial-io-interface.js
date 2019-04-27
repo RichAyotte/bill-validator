@@ -9,7 +9,7 @@
 'use strict'
 
 const IOInterface = require('../../lib/types/io-interface')
-const serialInterface = require('../../lib/samples/serial-io-interface')
+const serialInterface = require('../../samples/serial-io-interface')
 
 describe(`Serial IO interface`, () => {
 	it(`is a valid type`, () => {
