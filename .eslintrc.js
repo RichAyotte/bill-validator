@@ -9,6 +9,9 @@ module.exports = {
 	, extends: [
 		'ayotte'
 	]
+	, parserOptions: {
+		sourceType: 'module'
+	}
 	, plugins: ['jest']
 	, rules: {
 		'new-cap': 'off'

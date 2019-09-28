@@ -6,7 +6,8 @@
  * @license     MIT License
  */
 
-'use strict'
+// Jest doesn't support ESM 🙁
+// https://github.com/standard-things/esm/issues/706
 
 module.exports = {
 	coverageDirectory: 'test/coverage'
@@ -15,4 +16,8 @@ module.exports = {
 		, 'lib/**/*.js'
 	]
 	, verbose: true
+	, transform: {
+		'\\.m?js$': 'esm'
+	}
+	, transformIgnorePatterns: []
 }

@@ -6,10 +6,8 @@
  * @license     MIT License
  */
 
-'use strict'
-
-const createApex7000 = require('../lib/create-apex-7000')
-const serialInterface = require('./serial-io-interface')
+import createApex7000 from '../lib/create-apex-7000.js'
+import serialInterface from './serial-io-interface.js'
 
 const main = async () => {
 	const apex7000 = createApex7000({

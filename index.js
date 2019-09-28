@@ -6,12 +6,10 @@
  * @license     MIT License
  */
 
-'use strict'
+import createApex7000 from './lib/create-apex-7000.js'
+import createSerialInterface from './lib/create-serial-interface.js'
 
-const createApex7000 = require('./lib/create-apex-7000')
-const createSerialInterface = require('./lib/create-serial-interface')
-
-module.exports = {
+export default {
 	createApex7000
 	, createSerialInterface
 }

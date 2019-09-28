@@ -6,11 +6,9 @@
  * @license     MIT License
  */
 
-'use strict'
-
-const BillValidator = require('../../lib/types/bill-validator')
-const createApex7000 = require('../../lib/create-apex-7000')
-const serialInterface = require('../../samples/serial-io-interface')
+import BillValidator from '../../lib/types/bill-validator.js'
+import createApex7000 from '../../lib/create-apex-7000.js'
+import serialInterface from '../../samples/serial-io-interface.js'
 
 describe('Apex 7000 bill validator', () => {
 	const apex7000 = createApex7000({

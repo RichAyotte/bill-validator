@@ -6,11 +6,9 @@
  * @license     MIT License
  */
 
-'use strict'
+import createSerialInterface from '../lib/create-serial-interface.js'
 
-const createSerialInterface = require('../lib/create-serial-interface')
-
-module.exports = createSerialInterface({
+export default createSerialInterface({
 	port: '/dev/ttyUSB0'
 	, portOptions: {
 		autoOpen: false

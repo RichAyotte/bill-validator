@@ -6,9 +6,7 @@
  * @license     MIT License
  */
 
-'use strict'
-
-const IOInterface = require('../../lib/types/io-interface')
+import IOInterface from '../../lib/types/io-interface.js'
 
 describe(`IO interface`, () => {
 	const ioInterface = IOInterface({

@@ -6,10 +6,8 @@
  * @license     MIT License
  */
 
-'use strict'
-
-const IOInterface = require('../../lib/types/io-interface')
-const serialInterface = require('../../samples/serial-io-interface')
+import IOInterface from '../../lib/types/io-interface.js'
+import serialInterface from '../../samples/serial-io-interface.js'
 
 describe(`Serial IO interface`, () => {
 	it(`is a valid type`, () => {

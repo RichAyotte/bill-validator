@@ -23,9 +23,8 @@ $ npm i --save bill-validator
 
 ### Usage
 ```js
-'use strict'
 
-const {createApex7000, createSerialInterface} = require('bill-validator')
+import {createApex7000, createSerialInterface} from 'bill-validator'
 
 const main = async () => {
 	// Create a IO Interface
